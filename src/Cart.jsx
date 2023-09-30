@@ -14,7 +14,7 @@ function Cart({ id }) {
           "https://proud-boa-raincoat.cyclic.cloud/cart"
         );
         const data = res.data;
-        console.log(data);
+
         setCart(data);
       } catch (e) {
         console.error(e.message);
