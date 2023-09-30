@@ -2,7 +2,7 @@ import axios from "axios";
 import Loder from "./Loder";
 import { useState } from "react";
 
-function CartForm({ setId }) {
+function CartForm({ setCounter }) {
   const ids = ["A", "B", "C", "D"];
   const [loder, setLoder] = useState(false);
 
@@ -18,7 +18,7 @@ function CartForm({ setId }) {
         })
         .then((res) => {
           if (res.status === 200) {
-            setId(id);
+            setCounter((curr) => curr + 1);
           }
         });
     } catch (e) {

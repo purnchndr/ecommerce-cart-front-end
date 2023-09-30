@@ -3,7 +3,7 @@ import Cart from "./Cart";
 import CartForm from "./CartForm";
 
 function App() {
-  const [id, setId] = useState("A");
+  const [counter, setCounter] = useState(0);
 
   return (
     <div>
@@ -11,8 +11,8 @@ function App() {
         <h1>Ecommerce Cart</h1>
       </header>
       <div className="main">
-        <CartForm setId={setId} />
-        <Cart id={id} />
+        <CartForm setCounter={setCounter} />
+        <Cart counter={counter} setCounter={setCounter} />
       </div>
       <footer className="footer">
         <p>

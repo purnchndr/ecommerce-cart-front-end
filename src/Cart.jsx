@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import Loder from "./Loder";
 
-function Cart({ id }) {
+function Cart({ setCounter, counter }) {
   const [cart, setCart] = useState({ products: [] });
   const [loder, setLoder] = useState(false);
 
@@ -14,18 +14,17 @@ function Cart({ id }) {
           "https://proud-boa-raincoat.cyclic.cloud/cart"
         );
         const data = res.data;
+        console.log(data);
 
         setCart(data);
       } catch (e) {
         console.error(e.message);
-        setCart({ products: [] });
-        setLoder(false);
       } finally {
         setLoder(false);
       }
     }
     getdata();
-  }, [id]);
+  }, [counter]);
 
   async function clearCart() {
     try {
@@ -52,7 +51,7 @@ function Cart({ id }) {
       {cart.products.length > 0 ? (
         <>
           <div>
-            <h1>Cart Items</h1>
+            <h1>Cart Items {counter} items</h1>
           </div>
           <div>
             <ul className="resul">
