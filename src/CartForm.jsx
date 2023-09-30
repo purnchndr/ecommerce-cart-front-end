@@ -52,7 +52,7 @@ function CartForm({ setCounter }) {
               <p>Orange (B)</p>
               <span>$20.00</span>
             </div>
-            <button onClick={() => handelAddToCart(2)}>Add to Cart</button>
+            <button onClick={() => handelAddToCart(1)}>Add to Cart</button>
           </li>
           <li className="proli">
             <div className="proicon">
