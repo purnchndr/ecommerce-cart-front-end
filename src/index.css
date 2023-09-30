@@ -1,0 +1,135 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(226, 195, 255);
+  color: rgb(16, 0, 31);
+}
+
+h3,
+h1 {
+  font-size: 30px;
+}
+
+.section {
+  background-color: rgb(213, 164, 255);
+  padding: 20px;
+  border-radius: 1rem;
+  border: 2px solid blueviolet;
+  width: 50%;
+  margin: 0 10px;
+}
+
+li {
+  list-style: none;
+}
+
+.products {
+  background-color: rgb(255, 192, 249);
+  padding: 10px;
+  border-radius: 1rem;
+}
+
+.products p {
+  font-size: 25px;
+  padding: 0;
+  margin: 10px 5px;
+}
+
+.products li {
+  background-color: rgb(229, 182, 255);
+  padding: 3px 10px;
+  border-radius: 1rem;
+  border: 1px solid blueviolet;
+  margin: 10px 0;
+}
+.products p,
+span {
+  display: inline-block;
+}
+.proicon {
+  flex-direction: column;
+}
+
+.proli {
+  display: flex;
+  align-items: center;
+}
+
+button {
+  border: none;
+  background-color: blueviolet;
+  color: white;
+  border-radius: 1rem;
+  padding: 10px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 100px;
+}
+
+.resul {
+  background-color: rgb(255, 192, 249);
+  padding: 10px;
+  border-radius: 1rem;
+}
+
+.resli {
+  background-color: rgb(229, 182, 255);
+  padding: 5px 10px;
+  border-radius: 1rem;
+  border: 1px solid blueviolet;
+  margin: 10px 0;
+}
+
+.resname {
+  font-size: 25px;
+  margin: 5px;
+}
+
+.resli span {
+  font-weight: lighter;
+  display: block;
+  font-size: small;
+}
+
+header {
+  background-color: blueviolet;
+  color: white;
+  margin: 10px 0;
+  text-align: center;
+  padding: 10px;
+  border-radius: 1rem;
+}
+header h1 {
+  margin: 0;
+}
+
+@media screen and (max-width: 700px) {
+  .main {
+    display: block;
+    padding: 20px;
+  }
+  .section {
+    width: auto;
+  }
+}
+
+.footer {
+  position: fixed;
+  text-align: center;
+  width: 95%;
+  bottom: 0;
+  background-color: blueviolet;
+  color: white;
+  margin: 10px;
+  border-radius: 1rem;
+  margin-top: 50px;
+}
+
+.footer a {
+  color: white;
+}
